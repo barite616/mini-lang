@@ -1,0 +1,16 @@
+fn factorial(n) {
+    if (n <= 1) {
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
+
+fn fib(n) {
+    if (n < 2) {
+        return n;
+    }
+    return fib(n - 1) + fib(n - 2);
+}
+
+println("factorial(5) = " + str(factorial(5)));
+println("fib(10) = " + str(fib(10)));

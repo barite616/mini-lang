@@ -1,0 +1,31 @@
+// Mini-Lang 示例程序：计算斐波那契数列前 N 项
+fn fib(n) {
+    if (n < 2) {
+        return n;
+    }
+    return fib(n - 1) + fib(n - 2);
+}
+
+// 打印前 10 项
+let i = 0;
+while (i < 10) {
+    print("fib(");
+    print(i);
+    print(") = ");
+    println(fib(i));
+    i = i + 1;
+}
+
+// 用数组存储结果
+let results = [];
+let j = 0;
+while (j < 15) {
+    push(results, fib(j));
+    j = j + 1;
+}
+
+println("---");
+println("Results array:");
+for (val in results) {
+    println(val);
+}

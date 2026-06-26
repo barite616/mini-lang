@@ -1,0 +1,6 @@
+
+let x = 10;
+let y = 20;
+println(x + y);
+println(1 + 2 * 3);
+println(x * 2 + 5);
